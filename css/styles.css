@@ -83,10 +83,17 @@ header {
   text-align: center;
 }
 
+#about-subtext-one {
+  font-size: 80px;
+}
+#about-subtext-two {
+  font-size: 120px;
+  font-weight: bold;
+}
 
 
 #subtext {
-  font-size: 80px;
+  font-size: 100px;
   color: white;
 }
 
@@ -94,7 +101,7 @@ header {
   color: #D40855;
   background-color: beige;
   border: none;
-  padding: 5px 10px;
+  padding: 20px 30px;
   border-radius: 4px;
   font-size: 12px;
   text-transform: uppercase;
@@ -112,13 +119,14 @@ header {
   justify-content: center;
   padding: 60px;
   align-items: center;
+  height: 700px;
 }
 
 
 
 #about-image {
   width: 30%;
-  /* height: 40%; */
+  height: 70%;
   /* display: flex; */
   border-radius: 50px;
   transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
@@ -130,9 +138,16 @@ header {
   transform: scale(1.1  ); /* Zoom in on hover */
 }
 
+/* .sub-header .courgette-regular {
+  font-size: 80px;
+}
+
+.sub-header .poppins-bold{
+  font-size: 100px;
+} */
 
 #sub-headertext{
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.7;
   color: #666666;
   margin: 0px;
@@ -147,7 +162,7 @@ padding: 30px 120px;
 .our-story{
   font-family: Montserrat;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 15px;
     color: #222222;
     text-transform: uppercase;
     letter-spacing: 1px;
