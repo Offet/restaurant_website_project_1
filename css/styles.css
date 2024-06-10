@@ -20,7 +20,7 @@ body {
 }
 
 #logo {
-  width: 120px;
+  width: 180px;
 }
 
 nav{
@@ -39,7 +39,7 @@ z-index: 500;
   column-gap: 20px;
   text-transform: uppercase;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   /*font-weight: bold;*/
 }
   
@@ -91,7 +91,7 @@ header {
 }
 
 .menu-button {
-  color: deeppink;
+  color: #D40855;
   background-color: beige;
   border: none;
   padding: 5px 10px;
@@ -103,6 +103,7 @@ header {
 .menu-button:hover {
   background-color: #D40855;
   color: white;
+  font-size: 12px;
   line-height: 1.1;
 }
 
@@ -155,7 +156,7 @@ padding: 30px 120px;
 
 
 .our-story:hover{
-  color: #d61c22; 
+  color: #D40855; 
 
 }
 .sub-header {
@@ -168,11 +169,11 @@ padding: 30px 120px;
   font-size: 30px;
   line-height: 1.2;
   /* color: #d61c22;  */
-  color: #d61c22; 
+  color: #D40855; 
 }
 
 .sub-header :nth-child(2) {
-  color: #222222;
+  color: black;
   font-size: 50px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -182,76 +183,104 @@ padding: 30px 120px;
 /* working on the discover section of my website */
 
 
-.discover {
-  position: relative;
-  background-image: url(../assets/images/discover2.jpg);
-  /*setting the width and height*/
-  width: 100%;
-  height: 40vh;
-  background-repeat: no-repeat; /* Ensures image doesn't repeat */
-  background-size: cover; /* Scales image to cover the element */
-  background-attachment: fixed;
+.discover{
+  display: block;
+  text-align: center;
 }
 
-#discover-overlay {
-  height: 100%; /* Sets the height to 100% of the viewport height */
-  width: 100%; /* Sets the width to 100% of the viewport width */
-  background-color: rgba(0, 0, 0, 0.65); /*Sets the background color to black with 65% opacity*/
+.header-intro {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  padding-top: 40px;
+  align-items: center;
+  /* background-position: center 61.6667px; */
+  /* height: 120px; */
+}
+
+
+.header-intro :first-child{
+  /* padding-top: 200px; */
+  font-size: 30px;
+  color: #D40855; 
+}
+
+.header-intro :nth-child(2) {
+  color: black;
+  font-size: 40px;
+  line-height: -3.2;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+
+.flex-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  /* background-color: DodgerBlue; */
+  justify-content: center;
+  align-items: center;
+  row-gap: 90%;
+}
+.flex-container-one {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* changed it from left*/
+  margin-top: 100px;
+
+}
+
+.mini-headers {
+  text-decoration: none;
+  font-size: 12pt;
+  font-weight: 200;
+  letter-spacing: 5px;
+  color: black;
+}
+.learn-more{
+  text-decoration: none;
+  color: black;
+}
+
+.flex-container > div {
+  background-color: #f5eded;
+  width: 30%; /* Adjusted to 30% for better fit within the flex container */
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.flex-container img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio / display: block; / Remove any extra space below the image */
+  }
+
+
+  /* Hero section */
+#hero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; /* Prevent any overflow issues */
+}
+
+#hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.divided-discovers {
-  align-items: center;
-  text-align: center;
-}
-
-.imaging {
-  width: 30%;
-  /* height: 40%; */
-  /* display: flex; */
-  border-radius: 50px;
-  transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
-
-.head-one {
-  font-family: 'Courier New', Courier, monospace;
-}
-
-
-
-.discover-content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  /* transform: translate(-50%, -50%);
-  z-index: 5;
-  text-align: center; 
-  color: white; */
-} 
-
-.discover-content span {
-  font-size: 2.6rem !important;
-}
-
-.discover-sub{
-  color:#D61C22 !important;
-  font-size: 2rem;
-} 
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 80px;
-  margin-bottom: auto;
-  background-color: white;
-  align-items: center;
- row-gap: 50%;
+  row-gap: 20px;
+  z-index: 100;
 }
 
 
@@ -276,7 +305,7 @@ padding: 30px 120px;
 #menu {
   background-color: #F5F2EC;
   width: 100%;
-  height: 60vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -284,11 +313,21 @@ padding: 30px 120px;
   row-gap: 40px;
   letter-spacing: 6px;
 }
+.romantic{
+  width: 500px;
+  height: 800px;
+}
+
+.romantic img{
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+}
 
 #dis-text {
   font-size: 30px;
   font-weight: 50px;
-  color: #D40855;
+  color: black;
 }
 
 .grid-container {
@@ -326,6 +365,7 @@ padding: 30px 120px;
   width: 100vw;
   height: 60vh;
   position: relative;
+  margin-top: 0px;
 }
 
 #video {
