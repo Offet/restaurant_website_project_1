@@ -120,13 +120,18 @@ header {
   padding: 60px;
   align-items: center;
   height: 700px;
+  background-color: #EFEFEF;
 }
 
-
+#about-container {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
 
 #about-image {
   width: 30%;
-  height: 70%;
+  height: 450px;
   /* display: flex; */
   border-radius: 50px;
   transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
@@ -150,7 +155,7 @@ header {
   font-size: 20px;
   line-height: 1.7;
   color: #666666;
-  margin: 0px;
+  margin-top: 30px;
 text-align: center;
 padding: 30px 120px;
 }
@@ -178,18 +183,19 @@ padding: 30px 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
 }
 
 .sub-header :first-child{
-  font-size: 30px;
+  font-size: 50px;
   line-height: 1.2;
   /* color: #d61c22;  */
-  color: #D40855; 
-}
+   color: #D40855; 
+} 
 
 .sub-header :nth-child(2) {
   color: black;
-  font-size: 50px;
+  font-size: 70px;
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 6px;
@@ -407,6 +413,22 @@ padding: 30px 120px;
   padding: 120px;
   display: flex;
   justify-content: space-between;
+}
+.form-item {
+  height: 3.5rem;
+  width: 20rem;
+  margin-top: 10px;
+}
+
+.form-item-button {
+  background-color: #D40855;
+  color: white;
+  font-size: 12px;
+  line-height: 1.1;
+}
+
+.form-item-button:hover {
+  color: #D40855; 
 }
 
 #reservation img {
